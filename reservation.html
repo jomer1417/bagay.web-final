@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my style.css">
+    <title>Reservation - FWB Resort</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <img src="image/logo.png" alt="FWB Resort Logo">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container reservation">
+        <h2>Make a Reservation</h2>
+        <p>Secure your spot in paradise today.</p>
+        <form id="reservation-form" action="process_reservation.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="99" required>
+            </div>
+            <div class="form-group">
+                <label for="room_type">Room Type</label>
+                <select id="room_type" name="room_type" required>
+                    <option value="cottage" selected>Cottage</option>
+                    <option value="villa">Villa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Amenities</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="videoke" value="on"> Videoke</label>
+                    <label><input type="checkbox" name="garden" value="on"> Garden Access</label>
+                    <label><input type="checkbox" name="pool" value="on"> Pool Access</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Reservation Type</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="res_type" value="day_trip"> Day Trip</label>
+                    <label><input type="radio" name="res_type" value="overnight"> Overnight Stay</label>
+                    <label><input type="radio" name="res_type" value="group"> Group Gathering</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="special">Special Requests</label>
+                <textarea id="special" name="special_requests" rows="5" cols="50" placeholder="Enter your special requests here..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="document">Upload Document</label>
+                <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.jpg,.png">
+            </div>
+            <input type="hidden" name="resort_id" value="fwb_001">
+            <div class="button-group">
+                <input type="submit" name="submit" value="Submit Reservation">
+                <input type="reset" name="reset" value="Clear Form">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FWB Resort. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for choosing FWB Resort. We'll contact you soon with details.</p>
+        </div>
+    </div>
+</body>
+</html>
