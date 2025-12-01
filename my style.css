@@ -412,3 +412,306 @@ footer p {
 .close:hover {
     color: #333;
 }
+
+/* Responsive*/
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        padding: 0 10px 15px 10px;
+        justify-content: center;
+    }
+
+    .navbar ul img {
+        max-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .container > p {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .gallery-grid img {
+        height: 200px;
+    }
+
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact > p {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        padding: 1.5rem;
+        min-width: 100%;
+    }
+
+    .contact-item i {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .modal-content {
+        margin: 20% auto;
+        padding: 2rem;
+        width: 85%;
+    }
+
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding-top: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0 5px 10px 5px;
+        gap: 5px;
+    }
+
+    .navbar ul img {
+        max-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container > p {
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .gallery-grid {
+        padding: 0 0.5rem;
+    }
+
+    .gallery-grid img {
+        height: 180px;
+    }
+
+    .contact {
+        padding: 1.5rem 0.5rem;
+        min-height: 50vh;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact > p {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.8rem;
+    }
+
+    .contact-item p {
+        font-size: 0.95rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    input[type="file"],
+    textarea,
+    select {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        margin: 30% auto;
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .modal-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+
+    .close {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .contact h2 {
+        font-size: 1.3rem;
+    }
+
+    .gallery-grid img {
+        height: 150px;
+    }
+}
