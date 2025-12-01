@@ -117,13 +117,6 @@ body {
     padding: 2rem 0;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -133,7 +126,13 @@ body {
     padding: 0 2rem;
 }
 
-/* Reservation Section */
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .reservation {
     background: #f8f9fa;
     padding: 2rem 0;
@@ -151,7 +150,6 @@ body {
     margin-bottom: 3rem;
 }
 
-/* Contact Section */
 .contact {
     background: #f8f9fa;
     padding: 3rem 2rem;
@@ -211,7 +209,6 @@ body {
     word-wrap: break-word;
 }
 
-/* Forms */
 form {
     background: white;
     padding: 3rem;
@@ -238,7 +235,6 @@ input[type="email"],
 input[type="tel"],
 input[type="date"],
 input[type="number"],
-input[type="password"],
 input[type="file"],
 textarea,
 select {
@@ -265,7 +261,20 @@ textarea {
     min-height: 120px;
 }
 
-.checkbox-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .radio-group {
     display: flex;
     flex-direction: column;
@@ -273,7 +282,6 @@ textarea {
     margin-top: 0.5rem;
 }
 
-.checkbox-group label,
 .radio-group label {
     font-weight: 400;
     display: flex;
@@ -297,8 +305,7 @@ input[type="radio"] {
 }
 
 input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type="reset"] {
     flex: 1;
     min-width: 150px;
     padding: 1rem 2rem;
@@ -334,18 +341,6 @@ input[type="reset"]:hover {
     box-shadow: 0 6px 20px rgba(108, 117, 125, 0.3);
 }
 
-input[type="button"] {
-    background: #28a745;
-    color: white;
-}
-
-input[type="button"]:hover {
-    background: #218838;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
-}
-
-/* Footer */
 footer {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
@@ -358,32 +353,6 @@ footer p {
     font-size: 1rem;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.1);
-}
-
-.social-links a:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.2);
-}
-
-/* Modal */
 .modal {
     display: none;
     position: fixed;
